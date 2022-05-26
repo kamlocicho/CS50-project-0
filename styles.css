@@ -54,7 +54,7 @@ body {
           flex-direction: column;
 }
 
-.container form input[name="q"] {
+.container form .search-bar {
   margin-bottom: 10px;
   border: 1px solid black;
   width: 500px;
@@ -72,9 +72,53 @@ body {
           justify-content: center;
 }
 
+.advanced-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advanced-container h1 {
+  margin-bottom: 10px;
+}
+
+.advanced-container form {
+  display: table;
+}
+
+.advanced-container form div {
+  display: table-row;
+  text-align: left;
+}
+
+.advanced-container form div input, .advanced-container form div label {
+  display: table-cell;
+  margin: 0 10px;
+}
+
 input[type="submit"] {
   max-width: 300px;
   margin: 0 10px;
   padding: 5px;
+}
+
+input[value="Advanced search"] {
+  margin-top: 10px;
+  background-color: #8ab4f8;
+  border: 1px solid #8ab4f8;
+  border-radius: 2px;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
